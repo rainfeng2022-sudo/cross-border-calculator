@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>跨境创业测算｜手机版离线版</title><style>
+<!doctype html><html lang="zh-CN" class="locked"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>跨境创业测算｜手机版离线版</title><style>
 :root{font-family:"Microsoft YaHei",Arial,sans-serif;color:#172a35;background:#f4f6f5}*{box-sizing:border-box}body{margin:0}.wrap{max-width:1160px;margin:auto;padding:32px 20px 55px}h1{font-size:29px;margin:5px 0}h2{font-size:18px;margin:0 0 13px}p{color:#5d7075;line-height:1.65}.eyebrow{font-size:12px;letter-spacing:.1em;color:#19776e;font-weight:700}.intro{max-width:870px;margin:4px 0 23px}.grid{display:grid;grid-template-columns:350px 1fr;gap:16px}.card{background:#fff;border:1px solid #dfe6e3;border-radius:13px;padding:20px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:#ecf5f0;border-radius:9px;padding:15px}.stat small{color:#6c817c}.stat b{display:block;color:#145d54;font-size:25px;margin-top:3px}.line{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #e8eeeb;font-size:13px}.line input{width:78px;padding:5px;text-align:right;border:1px solid #cad8d2;border-radius:5px;color:#172a35;background:white}.line span:last-child{white-space:nowrap}.key{color:#62767a}.section{margin-top:16px}.barrow{display:grid;grid-template-columns:112px 1fr 77px;gap:8px;align-items:center;margin:10px 0;font-size:13px}.track{height:15px;background:#e9f0ed;border-radius:3px;overflow:hidden}.fill{height:100%;background:#2b8876}.warn{background:#fff6e7;border:1px solid #eedfc7;border-radius:9px;padding:13px;font-size:13px;line-height:1.6;margin-top:15px}.small{font-size:12px}.routes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.route{border:1px solid #dce7e2;border-radius:9px;padding:14px}.route b{display:block;margin-bottom:6px}.route p{font-size:12px;margin:0}.status{font-size:11px;color:#1e796c;background:#e9f4ee;padding:3px 7px;border-radius:15px}.footer{font-size:12px;margin-top:24px}.footer a{color:#147267}.recommend{background:#eaf4f0;border-radius:10px;padding:16px;margin-top:15px;font-size:14px}.toggle{display:flex;align-items:center;gap:6px}.toggle input{width:16px}.figure{font-size:31px;font-weight:700;color:#195e54}@media(max-width:830px){.grid{grid-template-columns:1fr}.routes{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}@media(max-width:520px){.stats{grid-template-columns:1fr}.wrap{padding:20px 13px}}@media print{body{background:white}.card{break-inside:avoid}.line input{border:0}}
  .model{display:grid;grid-template-columns:350px 1fr;gap:16px}.model .line{font-size:13px}.model .line input{width:82px}.modelstats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.modelstats .stat{background:#eff3f1}.modelstats .stat b{font-size:21px}.formula{font-size:13px;line-height:1.8;background:#f3f7f5;border-radius:8px;padding:12px;margin-top:13px}.sctable{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}.sctable th,.sctable td{padding:9px 7px;border-bottom:1px solid #e2e9e5;text-align:right}.sctable th:first-child,.sctable td:first-child{text-align:left}.sctable th{color:#607775;font-weight:600}.negative{color:#b0553e}.positive{color:#146e5e}.important{border-left:4px solid #b56a32;padding:9px 13px;background:#fff6eb;margin:13px 0;line-height:1.6}.points{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.points>div{background:#f3f6f4;padding:13px;border-radius:8px;font-size:13px;line-height:1.65}.points b{display:block;margin-bottom:4px}@media(max-width:830px){.model{grid-template-columns:1fr}.modelstats{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.modelstats,.points{grid-template-columns:1fr}}
 </style><style>
@@ -21,7 +21,15 @@
 }
 @media(max-width:380px){.wrap{padding:12px 9px 24px}.card{padding:13px}.stat b{font-size:19px}}
 @media(min-width:831px){.collapsible-card summary{display:none}}
-</style></head><body><main class="wrap">
+</style><style>
+.locked main{display:none}.unlocked #gate{display:none}
+#gate{min-height:100vh;display:grid;place-items:center;background:#f4f6f5;padding:20px}
+.gate-card{width:min(100%,390px);background:white;border:1px solid #dfe6e3;border-radius:13px;padding:26px;color:#172a35;font-family:"Microsoft YaHei",Arial,sans-serif}
+.gate-card h1{font-size:22px;margin:0 0 8px}.gate-card p{font-size:13px;line-height:1.6;margin:0 0 18px;color:#5d7075}
+.gate-card input{width:100%;padding:13px;font-size:17px;border:1px solid #aebfba;border-radius:8px;margin-bottom:12px}
+.gate-card button{width:100%;padding:12px;background:#19776e;color:white;border:0;border-radius:8px;font-size:16px;cursor:pointer}
+#gateError{color:#b04435;font-size:13px;min-height:20px;margin-top:10px}
+</style></head><body><div id="gate"><form class="gate-card" id="gateForm"><h1>跨境创业测算</h1><p>输入访问密码，打开成本与营收测算表。</p><input id="gatePassword" type="password" autocomplete="current-password" placeholder="访问密码" required autofocus><button type="submit">打开测算表</button><div id="gateError" role="alert"></div></form></div><main class="wrap">
 <div class="eyebrow">独立站先行 · 前期不投流 · 2026-09-28</div><h1>跨境创业前期投入测算</h1><p class="intro">中国主体、Shopify 独立站、美国首站；视频纯 AI 制作。Shopify 按正常月费计，TikTok 店铺与备货留到后续阶段。左侧金额可修改。美元暂按 1 美元≈7.1 元折算。</p>
 <p style="background:#e9f4ee;color:#145d54;padding:10px 12px;border-radius:8px;font-size:13px;margin:0 0 12px"><b>直接修改输入框里的数字，结果会自动重算。</b>下方“启动成本”和“单件经济模型”都已展开；点标题可收起。</p><div class="grid"><section class="card"><h2>预算输入</h2>
 <strong>一笔付出的启动款</strong>
@@ -109,7 +117,23 @@ function renderModel(){const r=v("saleUsd")*v("fx"),goods=v("goodsCost")+v("inla
     card.appendChild(details);
   });
 })();
+</script><script>
+(function(){
+  const expected='4b02e0c6135a5924521217d4b679493c2a717aa57fcb56760d51f7b2aea7abda';
+  const unlock=()=>{document.documentElement.classList.remove('locked');document.documentElement.classList.add('unlocked')};
+  try{if(sessionStorage.getItem('calculator-access')===expected)unlock()}catch(e){}
+  document.getElementById('gateForm').addEventListener('submit',async function(event){
+    event.preventDefault();
+    const value=document.getElementById('gatePassword').value;
+    const data=new TextEncoder().encode(value);
+    const digest=await crypto.subtle.digest('SHA-256',data);
+    const actual=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');
+    if(actual===expected){try{sessionStorage.setItem('calculator-access',expected)}catch(e){}unlock()}
+    else{document.getElementById('gateError').textContent='密码不正确，请重试。';document.getElementById('gatePassword').select()}
+  });
+})();
 </script></body></html>
+
 
 
 
