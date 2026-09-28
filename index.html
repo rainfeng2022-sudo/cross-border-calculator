@@ -1,0 +1,117 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>跨境创业测算｜手机版离线版</title><style>
+:root{font-family:"Microsoft YaHei",Arial,sans-serif;color:#172a35;background:#f4f6f5}*{box-sizing:border-box}body{margin:0}.wrap{max-width:1160px;margin:auto;padding:32px 20px 55px}h1{font-size:29px;margin:5px 0}h2{font-size:18px;margin:0 0 13px}p{color:#5d7075;line-height:1.65}.eyebrow{font-size:12px;letter-spacing:.1em;color:#19776e;font-weight:700}.intro{max-width:870px;margin:4px 0 23px}.grid{display:grid;grid-template-columns:350px 1fr;gap:16px}.card{background:#fff;border:1px solid #dfe6e3;border-radius:13px;padding:20px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:#ecf5f0;border-radius:9px;padding:15px}.stat small{color:#6c817c}.stat b{display:block;color:#145d54;font-size:25px;margin-top:3px}.line{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #e8eeeb;font-size:13px}.line input{width:78px;padding:5px;text-align:right;border:1px solid #cad8d2;border-radius:5px;color:#172a35;background:white}.line span:last-child{white-space:nowrap}.key{color:#62767a}.section{margin-top:16px}.barrow{display:grid;grid-template-columns:112px 1fr 77px;gap:8px;align-items:center;margin:10px 0;font-size:13px}.track{height:15px;background:#e9f0ed;border-radius:3px;overflow:hidden}.fill{height:100%;background:#2b8876}.warn{background:#fff6e7;border:1px solid #eedfc7;border-radius:9px;padding:13px;font-size:13px;line-height:1.6;margin-top:15px}.small{font-size:12px}.routes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.route{border:1px solid #dce7e2;border-radius:9px;padding:14px}.route b{display:block;margin-bottom:6px}.route p{font-size:12px;margin:0}.status{font-size:11px;color:#1e796c;background:#e9f4ee;padding:3px 7px;border-radius:15px}.footer{font-size:12px;margin-top:24px}.footer a{color:#147267}.recommend{background:#eaf4f0;border-radius:10px;padding:16px;margin-top:15px;font-size:14px}.toggle{display:flex;align-items:center;gap:6px}.toggle input{width:16px}.figure{font-size:31px;font-weight:700;color:#195e54}@media(max-width:830px){.grid{grid-template-columns:1fr}.routes{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}@media(max-width:520px){.stats{grid-template-columns:1fr}.wrap{padding:20px 13px}}@media print{body{background:white}.card{break-inside:avoid}.line input{border:0}}
+ .model{display:grid;grid-template-columns:350px 1fr;gap:16px}.model .line{font-size:13px}.model .line input{width:82px}.modelstats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.modelstats .stat{background:#eff3f1}.modelstats .stat b{font-size:21px}.formula{font-size:13px;line-height:1.8;background:#f3f7f5;border-radius:8px;padding:12px;margin-top:13px}.sctable{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}.sctable th,.sctable td{padding:9px 7px;border-bottom:1px solid #e2e9e5;text-align:right}.sctable th:first-child,.sctable td:first-child{text-align:left}.sctable th{color:#607775;font-weight:600}.negative{color:#b0553e}.positive{color:#146e5e}.important{border-left:4px solid #b56a32;padding:9px 13px;background:#fff6eb;margin:13px 0;line-height:1.6}.points{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.points>div{background:#f3f6f4;padding:13px;border-radius:8px;font-size:13px;line-height:1.65}.points b{display:block;margin-bottom:4px}@media(max-width:830px){.model{grid-template-columns:1fr}.modelstats{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.modelstats,.points{grid-template-columns:1fr}}
+</style><style>
+@media(max-width:830px){
+  body{background:#f1f4f2}.wrap{padding:16px 12px 30px;max-width:620px}
+  h1{font-size:23px;line-height:1.3}.intro{font-size:13px;margin-bottom:14px}
+  .grid,.model{display:flex;flex-direction:column;gap:12px}
+  .card{padding:16px;border-radius:10px;min-width:0;width:100%}.stats,.modelstats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .stats .stat:last-child{grid-column:1/-1}.stat{padding:12px}.stat b{font-size:21px}.modelstats .stat b{font-size:18px}
+  .barrow{grid-template-columns:94px 1fr 64px;font-size:11px;gap:6px}.barrow b{text-align:right}
+  .line{font-size:13px;min-height:42px;align-items:center}.line input{width:75px;min-height:34px;font-size:15px}
+  .collapsible-card>h2{display:none}.collapsible-card details{display:block}
+  .collapsible-card summary{font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  .collapsible-card summary::after{content:'展开';font-size:12px;color:#19776e;font-weight:400}
+  .collapsible-card details[open] summary::after{content:'收起'}
+  .collapsible-card details[open] summary{margin-bottom:15px;padding-bottom:12px;border-bottom:1px solid #e2e9e5}
+  .sctable{display:block;overflow-x:auto;white-space:nowrap;max-width:100%}.sctable th,.sctable td{min-width:76px}
+  .points,.routes{grid-template-columns:1fr}.figure{font-size:27px}.recommend{line-height:1.6}
+  .footer{word-break:break-word}.section{margin-top:12px}
+}
+@media(max-width:380px){.wrap{padding:12px 9px 24px}.card{padding:13px}.stat b{font-size:19px}}
+@media(min-width:831px){.collapsible-card summary{display:none}}
+</style></head><body><main class="wrap">
+<div class="eyebrow">独立站先行 · 前期不投流 · 2026-09-28</div><h1>跨境创业前期投入测算</h1><p class="intro">中国主体、Shopify 独立站、美国首站；视频纯 AI 制作。Shopify 按正常月费计，TikTok 店铺与备货留到后续阶段。左侧金额可修改。美元暂按 1 美元≈7.1 元折算。</p>
+<p style="background:#e9f4ee;color:#145d54;padding:10px 12px;border-radius:8px;font-size:13px;margin:0 0 12px"><b>直接修改输入框里的数字，结果会自动重算。</b>下方“启动成本”和“单件经济模型”都已展开；点标题可收起。</p><div class="grid"><section class="card"><h2>预算输入</h2>
+<strong>一笔付出的启动款</strong>
+<div class="line"><span>公司注册／代办预留</span><span><input id="register" type="number" value="1000"> 元</span></div>
+<div class="line"><span>注册地址一年预留</span><span><input id="address" type="number" value="2400"> 元</span></div>
+<div class="line"><span>刻章、银行等预留</span><span><input id="bank" type="number" value="500"> 元</span></div>
+<div class="line"><span>域名一年</span><span><input id="domain" type="number" value="120"> 元</span></div>
+<div class="line"><span>INS／YouTube／FB 开号</span><span><input id="social" type="number" value="0"> 元</span></div>
+<div class="line"><span>中国商标申请预留</span><span><input id="cnmark" type="number" value="270"> 元</span></div>
+<div class="line"><span>中国商标代理服务预留</span><span><input id="cnagent" type="number" value="600"> 元</span></div>
+<div class="line"><span>美国商标申请预留</span><span><input id="usmark" type="number" value="0"> 元</span></div>
+<div class="line"><span>美国商标律师报价</span><span><input id="uslawyer" type="number" value="0"> 元</span></div>
+<div class="line"><span>样品验货与产品测试</span><span><input id="sample" type="number" value="800"> 元</span></div>
+<div class="line"><span>Flow 账号数</span><span><input id="flowAccounts" type="number" value="1"> 个</span></div>
+<div class="line"><span>Flow 每号成本</span><span><input id="flowUnit" type="number" value="7"> 元</span></div>
+<div class="line"><span>搬瓦工 3 个月总价</span><span><input id="vpsQuarter" type="number" value="355"> 元</span></div>
+<div class="section"><strong>每月持续费用</strong></div>
+<div class="line"><span>代理记账预留</span><span><input id="books" type="number" value="300"> 元</span></div>
+<div class="line"><span>Shopify Basic 正常月费</span><span><input id="shopify" type="number" value="277"> 元</span></div>
+<div class="line"><span>RunningHub 月费</span><span><input id="runninghub" type="number" value="181"> 元</span></div>
+<div class="line"><span>Codex 账号数</span><span><input id="codexAccounts" type="number" value="2"> 个</span></div>
+<div class="line"><span>Codex 每号月费</span><span><input id="codexUnit" type="number" value="75"> 元</span></div>
+<div class="line"><span>Grok 账号数</span><span><input id="grokAccounts" type="number" value="2"> 个</span></div>
+<div class="line"><span>Grok 每号月费</span><span><input id="grokUnit" type="number" value="55"> 元</span></div>
+<div class="line"><span>企业邮箱（1 用户）</span><span><input id="other" type="number" value="60"> 元</span></div>
+<div class="line"><span>手机号／通信预留</span><span><input id="phone" type="number" value="30"> 元</span></div>
+<div class="line"><span>Shopify 应用</span><span><input id="apps" type="number" value="0"> 元</span></div>
+<div class="line"><span>试运营月数</span><span><input id="months" type="number" value="3"> 月</span></div>
+<div class="line"><span>意外缓冲</span><span><input id="buffer" type="number" value="2000"> 元</span></div>
+<div class="section"><strong>现金备用金（暂未花掉）</strong></div>
+<div class="line"><span>首单货款／物流周转</span><span><input id="fulfillReserve" type="number" value="3000"> 元</span></div>
+<div class="line"><span>退款／拒付周转</span><span><input id="refundReserve" type="number" value="1000"> 元</span></div>
+<div class="line"><span>同时开美区跨境 POP 店</span><span><input id="tiktok" type="checkbox" style="width:16px"> 计保证金</span></div>
+<p class="small">你的价格：RunningHub 181 元/月、约 7 万积分；每次视频约 100 积分，理论约 700 次，实际以工作流消耗和套餐期限为准。Codex、Grok 和 Flow 的渠道价格按你提供的数据记账，尚未由官方验证。</p>
+</section>
+<section class="card"><h2>开张前现金需求</h2><div class="stats"><div class="stat"><small>一次性支出</small><b id="one">—</b></div><div class="stat"><small>每月固定费</small><b id="recurring">—</b></div><div class="stat"><small>90 天需备现金</small><b id="total">—</b></div></div>
+<p class="small">需备现金＝一次性支出＋月固定费×试运营月数＋意外缓冲＋货款／物流／退款备用金＋已勾选的保证金。备用金和保证金不是已发生费用；广告为 0，尚未计入成交税费。</p>
+<h2 class="section">钱主要花在哪里</h2><div id="bars"></div>
+<div class="warn"><b>成本性质要分清：</b>万里汇开户、账户管理和入账按官方说明为 0 元；提现服务费按跨境电商业务最高 0.3% 计入成交后的费用。Shopify Basic 使用第三方支付时还有平台交易费，支付服务商另收费。美区跨境 POP 店保证金为每店 1,500 美元，属于占用现金，实际应缴额以入驻后台为准。搬瓦工不替代店铺、达人所在地和身份审核。</div>
+<div class="recommend" id="decision"></div>
+</section></div>
+<section class="section"><div class="eyebrow">营收模型 · 每单只买 1 件 · 客户支付 $20 且包邮</div><h1 style="font-size:24px">一件卖 20 美元，多少单能保本？</h1><p class="intro">以下以轻小非敏感商品为假设，售价含向顾客收取的运费。单件货款、物流、税费均需在确定 SKU、重量、申报价值和履约路线后向供应商与物流商核价；输入框可修改。</p><div class="model"><div class="card"><h2>单件经济模型</h2>
+<div class="line"><span>售价／客单价</span><span><input id="saleUsd" type="number" value="20" step="0.1"> 美元</span></div>
+<div class="line"><span>人民币／美元预算汇率</span><span><input id="fx" type="number" value="7.1" step="0.01"> 元</span></div>
+<div class="line"><span>货品采购</span><span><input id="goodsCost" type="number" value="30"> 元</span></div>
+<div class="line"><span>中国境内集货</span><span><input id="inland" type="number" value="3"> 元</span></div>
+<div class="line"><span>包装耗材</span><span><input id="packaging" type="number" value="3"> 元</span></div>
+<div class="line"><span>中国至美国单票物流</span><span><input id="shipping" type="number" value="45"> 元</span></div>
+<div class="line"><span>清关／税费单票预留</span><span><input id="customs" type="number" value="15"> 元</span></div>
+<div class="line"><span>支付服务商费率假设</span><span><input id="gatewayPct" type="number" value="4.4" step="0.1"> %</span></div>
+<div class="line"><span>支付固定费／笔</span><span><input id="gatewayFixed" type="number" value="0.3" step="0.01"> 美元</span></div>
+<div class="line"><span>Shopify 第三方交易费</span><span><input id="shopifyPct" type="number" value="2" step="0.1"> %</span></div>
+<div class="line"><span>万里汇提现费率预留</span><span><input id="worldPct" type="number" value="0.3" step="0.1"> %</span></div>
+<div class="line"><span>退款／拒付损失预留</span><span><input id="lossPct" type="number" value="5" step="0.5"> %</span></div>
+<div class="line"><span>投流获客成本／单</span><span><input id="adCac" type="number" value="0"> 元</span></div>
+<div class="line"><span>站点访客转化率假设</span><span><input id="conversion" type="number" value="1" step="0.1"> %</span></div>
+<div class="line"><span>计划月订单</span><span><input id="modelOrders" type="number" value="30"> 单</span></div>
+<div class="section"><strong>前三个月爬坡情景</strong></div>
+<div class="line"><span>第 1 个月订单</span><span><input id="ramp1" type="number" value="0"> 单</span></div>
+<div class="line"><span>第 2 个月订单</span><span><input id="ramp2" type="number" value="20"> 单</span></div>
+<div class="line"><span>第 3 个月订单</span><span><input id="ramp3" type="number" value="50"> 单</span></div>
+<p class="small">支付费率仅用 PayPal 中国大陆商家公开基准演示，不保证你所申请的账户适用；具体以商户协议为准。损失率是为退款、拒付及补发做的模型预留，不等于实际退款率。</p></div>
+<div class="card"><h2>保本与流量</h2><div class="modelstats"><div class="stat"><small>单件销售额</small><b id="unitRevenue">—</b></div><div class="stat"><small>单件贡献利润</small><b id="unitMargin">—</b></div><div class="stat"><small>每月保本单量</small><b id="breakOrders">—</b></div><div class="stat"><small>保本月访客量</small><b id="breakVisits">—</b></div></div><div class="formula" id="formula"></div><div class="important" id="keyWarning"></div><h2 class="section">不同订单量的月营收与经营结果</h2><table class="sctable"><thead><tr><th>月订单</th><th>月营收</th><th>订单贡献</th><th>扣固定费后</th><th>所需访客</th></tr></thead><tbody id="scenarioBody"></tbody></table><p class="small">“扣固定费后”是经营利润估算，未扣一次性开办费、所得税、个人劳动成本、产品认证及平台政策变动。营收不是到手现金，且收款可能存在结算周期或冻结。</p><div class="recommend" id="ninetyModel"></div><div class="formula" id="rampModel"></div></div></div></section>
+<section class="card section"><h2>执行前必须核实的重点</h2><div class="points"><div><b>1. 先验证支付链路</b>中国主体能否开通拟用的收单账户、Shopify 结账是否可用、万里汇承担的是哪一段收款／提现，须用真实主体完成审核与小额测试。不能把“能开万里汇”当作信用卡收单一定可用。</div><div><b>2. 拿单票到岸报价</b>把重量、尺寸、品名、材质、申报价值和目标邮编交给至少两家物流商，确认中国至美国运费、清关、税费、偏远附加费、退件处理和时效。表中 45 元运费与 15 元税费只是报价前的压力测试数。</div><div><b>3. 选品先看限制</b>先避开食品、药妆、带电、儿童用品、侵权图案及认证要求不明的品类；核实商标、图片与 AI 视频素材的商用权。出单前拿样品，核对品质、包装和实际物流重量。</div><div><b>4. 内容流量不能按播放量算</b>每月保本访客指进入网站的有效访客，不是视频播放量。应逐周记录发布数、播放量、主页访问、网站访客、加购、付款和退款，连续数周后才调整转化率假设。</div><div><b>5. 明确售后与资金节奏</b>写清交付时效、退款政策、客服回复时间，预留补发和拒付资金；记录平台结算日与供应商付款日。即使账面盈利，收款延迟也可能使周转金不足。</div><div><b>6. 分阶段投入</b>先上线可收款独立站和少量产品；拿到真实访客、转化与单件成本后才考虑广告。TK 店铺另算保证金、美国仓配、库存和运营时间，不能直接用独立站利润模型代替。</div></div></section>
+<section class="card section"><h2>美区 TikTok 的三种路径</h2><div class="routes"><div class="route"><b>先做内容账号 <span class="status">可先准备</span></b><p>拍视频、找内容方向、引流独立站。预算主要在内容制作；平台功能与链接权限按账号实际资格核实。</p></div><div class="route"><b>达人橱窗／联盟 <span class="status">需资格</span></b><p>美国官方规则要求达人在美国、年满 18 岁、完成身份审核；联盟达人目前至少 1,000 粉丝。卖别人的货，收入是佣金。</p></div><div class="route"><b>美区 TK 店铺 <span class="status">待核实</span></b><p>美国本土店与中国主体跨境店走不同申请渠道。开店前确认主体、招商条件、美国履约方式、保证金及平台费率；此处暂不计“买店”费用。</p></div></div></section>
+<section class="card section"><h2>还容易漏掉的成本</h2><p><b>本版新增：</b>验货样品 800 元、国内商标代理预留 600 元、企业邮箱约 60 元/月、通信预留 30 元/月；另留首单货款与物流 3,000 元、退款／拒付 1,000 元。除邮箱参考 Google Workspace Business Starter 灵活月付 $8.40 外，其余均是无产品、无城市报价时的计划假设，可直接改数字。纯 AI 视频不需要拍摄道具，但仍应实际验货。</p><p><b>社媒账号与商标：</b>Instagram、YouTube、Facebook 账号本身按 0 元预算，不能保证新号马上有外链或商业功能。中国商标网上申请官费为每类 270 元，本版先按 1 类列入；美国商标基础申请费为每类 $350，按 7.1 约 2,485 元，中国主体直接向 USPTO 申请还需美国执业律师，因此美国商标默认暂不申请。</p><p><b>暂时为零的项目：</b>Shopify 应用可先用免费套餐，付费追踪、评论或邮件工具需要时再开；流量广告先按 0。AI 额外积分、素材商用授权、类目认证、产品合规检测、税务申报或海外销售税咨询，均要在选定产品与市场后按真实报价补入。</p><p><b>有订单后才发生：</b>支付服务商手续费、Shopify 第三方交易费、万里汇提现费、产品采购、跨境运费与可能的清关税费、拒付和退货。前期不投流，也要先付货款与运费；因此备用金单列，不当作已经花掉的成本。</p><p><b>后续做 TK 店才发生：</b>跨境 POP 保证金、产品备货、入美头程、美国仓储与出库、退货地址、滞销库存及类目认证。常规订单有严格履约时限，先拿到仓配报价再决定是否开店。</p><p class="small">Shopify Basic 官方正常月付 $39，按 7.1 约 277 元。前三个月每月 $1 是促销，不作为本版基准。公司注册与地址费用由所在城市、地址条件及是否自己办理决定。搬瓦工按截图中的 E-Commerce VPS 洛杉矶 USCA_2：20GB 磁盘、$49.99/3个月，约 355 元。</p></section>
+<p class="footer">核价资料：<a href="https://www.shopify.com/pricing">Shopify 正常月费与交易费</a> · <a href="https://www.paypal.com/c2/business/paypal-business-fees?locale.x=zh_C2">PayPal 中国商家费率</a> · <a href="https://www.shopify.com/blog/ecommerce-conversion-rate">Shopify 转化率参考</a> · <a href="https://knowledge.workspace.google.com/admin/billing/understand-google-workspace-bills-and-charges">Google 企业邮箱</a> · <a href="https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/sell-in-china/set_up_payments">Shopify 中国支付设置</a> · <a href="https://www.cnipa.gov.cn/jact/front/mailpubdetail.do?sysid=13&transactId=494634">中国商标官费</a> · <a href="https://www.uspto.gov/trademarks/basics/how-much-does-it-cost">美国商标官费</a> · <a href="https://www.uspto.gov/trademarks/basics/do-i-need-attorney">美国律师要求</a> · <a href="https://www.worldfirst.com.cn/static/contenthub/blog/worldfirst-cross-border-payment-fee-cap-explained">万里汇费率</a> · <a href="https://www.tiktokshopglobalselling.com/zh-cn/settle">TikTok Shop 中国主体美国 POP 入驻</a> · <a href="https://seller-us.tiktok.com/university/essay?knowledge_id=3995852763301633">TK 履约时限</a> · <a href="https://bandwagonhost.com/order/ecommerce/Los%20Angeles/USCA_2">搬瓦工 E-Commerce VPS</a>。</p>
+</main><script>
+const ids=["register","address","bank","domain","social","cnmark","cnagent","usmark","uslawyer","sample","flowAccounts","flowUnit","vpsQuarter","books","shopify","runninghub","codexAccounts","codexUnit","grokAccounts","grokUnit","other","phone","apps","months","buffer","fulfillReserve","refundReserve"],v=id=>Math.max(0,Number(document.getElementById(id).value)||0),fmt=n=>"¥"+Math.round(n).toLocaleString("zh-CN");
+function render(){let months=v("months"),flow=v("flowAccounts")*v("flowUnit"),upfront=["register","address","bank","domain","social","cnmark","cnagent","usmark","uslawyer","sample","vpsQuarter"].reduce((s,id)=>s+v(id),0)+flow,monthlySum=v("books")+v("shopify")+v("runninghub")+v("codexAccounts")*v("codexUnit")+v("grokAccounts")*v("grokUnit")+v("other")+v("phone")+v("apps"),deposit=document.getElementById("tiktok").checked?1500*7.1:0,reserve=v("buffer")+v("fulfillReserve")+v("refundReserve")+deposit,spent=upfront+monthlySum*months,total=spent+reserve;document.getElementById("one").textContent=fmt(upfront);document.getElementById("recurring").textContent=fmt(monthlySum);document.getElementById("total").textContent=fmt(total);let groups=[["主体与地址",v("register")+v("address")+v("bank")+v("books")*months],["独立站与域名",v("domain")+(v("shopify")+v("apps"))*months],["AI 视频与账号",(v("runninghub")+v("codexAccounts")*v("codexUnit")+v("grokAccounts")*v("grokUnit")+v("other"))*months+flow],["搬瓦工与通信",v("vpsQuarter")+v("phone")*months],["商标与社媒",v("social")+v("cnmark")+v("cnagent")+v("usmark")+v("uslawyer")],["样品验货",v("sample")],["现金备用金",v("buffer")+v("fulfillReserve")+v("refundReserve")],["TK 保证金",deposit]];document.getElementById("bars").innerHTML=groups.filter(x=>x[1]>0).map(([name,amount])=>'<div class="barrow"><span>'+name+'</span><div class="track"><div class="fill" style="width:'+Math.min(100,amount/Math.max(total,1)*100)+'%"></div></div><b>'+fmt(amount)+'</b></div>').join("");document.getElementById("decision").innerHTML='<b>独立站起步需准备现金：</b><span class="figure">'+fmt(total)+'</span><br><span class="small">其中 90 天预计支出 '+fmt(spent)+'，未花的备用金与保证金 '+fmt(reserve)+'。前期广告预算 0，TK 店默认不计。</span>'}ids.forEach(id=>document.getElementById(id).addEventListener("input",render));document.getElementById("tiktok").addEventListener("change",render);render();
+const modelIds=["saleUsd","fx","goodsCost","inland","packaging","shipping","customs","gatewayPct","gatewayFixed","shopifyPct","worldPct","lossPct","adCac","conversion","modelOrders","ramp1","ramp2","ramp3"];
+function renderModel(){const r=v("saleUsd")*v("fx"),goods=v("goodsCost")+v("inland")+v("packaging"),ship=v("shipping")+v("customs"),pay=r*v("gatewayPct")/100+v("gatewayFixed")*v("fx"),platform=r*v("shopifyPct")/100,withdraw=r*v("worldPct")/100,loss=r*v("lossPct")/100,cac=v("adCac"),variable=goods+ship+pay+platform+withdraw+loss+cac,contrib=r-variable,fixed=v("books")+v("shopify")+v("runninghub")+v("codexAccounts")*v("codexUnit")+v("grokAccounts")*v("grokUnit")+v("other")+v("phone")+v("apps"),breakeven=contrib>0?Math.ceil(fixed/contrib):Infinity,visits=v("conversion")>0&&isFinite(breakeven)?Math.ceil(breakeven/(v("conversion")/100)):Infinity,upfront=["register","address","bank","domain","social","cnmark","cnagent","usmark","uslawyer","sample","vpsQuarter"].reduce((s,id)=>s+v(id),0)+v("flowAccounts")*v("flowUnit"),months=v("months"),quarterBreak=contrib>0?Math.ceil((upfront+fixed*months)/contrib):Infinity,fmtCount=n=>isFinite(n)?Math.round(n).toLocaleString("zh-CN"):"无法保本";document.getElementById("unitRevenue").textContent=fmt(r);document.getElementById("unitMargin").textContent=fmt(contrib);document.getElementById("breakOrders").textContent=fmtCount(breakeven)+(isFinite(breakeven)?" 单":"");document.getElementById("breakVisits").textContent=fmtCount(visits)+(isFinite(visits)?" 次":"");document.getElementById("formula").innerHTML="单件销售额 <b>"+fmt(r)+"</b>－货品与包装 <b>"+fmt(goods)+"</b>－物流与税费预留 <b>"+fmt(ship)+"</b>－支付费 <b>"+fmt(pay)+"</b>－Shopify 交易费 <b>"+fmt(platform)+"</b>－提现费 <b>"+fmt(withdraw)+"</b>－退款损失预留 <b>"+fmt(loss)+"</b>－投流获客 <b>"+fmt(cac)+"</b>＝每单贡献 <b>"+fmt(contrib)+"</b>。每月保本单量＝固定费 "+fmt(fixed)+" ÷ 每单贡献，向上取整。";document.getElementById("keyWarning").innerHTML=contrib<=0?"<b>重点：当前单件贡献不为正。</b>卖得越多，经营亏损可能越大；先提高客单价、降低货品与物流成本，或减少获客成本。":"<b>重点："+fmtCount(breakeven)+" 单不是营收，而是月固定费保本线。</b>按 "+v("conversion")+"% 的站点转化率，需要约 "+fmtCount(visits)+" 次有效网站访问。若付费获客成本高于 "+fmt(contrib+cac)+"／单，单件贡献会被广告吃完。";let steps=[0,20,30,40,60,100,v("modelOrders"),isFinite(breakeven)?breakeven:0].filter((n,i,a)=>a.indexOf(n)===i).sort((a,b)=>a-b);document.getElementById("scenarioBody").innerHTML=steps.map(n=>{let net=n*contrib-fixed,need=v("conversion")>0?Math.ceil(n/(v("conversion")/100)):Infinity;return "<tr><td>"+n+"</td><td>"+fmt(n*r)+"</td><td>"+fmt(n*contrib)+"</td><td class='"+(net>=0?"positive":"negative")+"'>"+fmt(net)+"</td><td>"+fmtCount(need)+"</td></tr>"}).join("");document.getElementById("ninetyModel").innerHTML="<b>收回前期开办与试运营支出：</b>按连续 "+months+" 个月、每单贡献不变，累计约需 <b>"+fmtCount(quarterBreak)+" 单</b>才能覆盖一次性支出 "+fmt(upfront)+" 与固定费 "+fmt(fixed*months)+"。此数未把 "+fmt(v("buffer")+v("fulfillReserve")+v("refundReserve"))+" 元现金备用金当作费用，也未计算老板工资。";let ramp=[v("ramp1"),v("ramp2"),v("ramp3")],rampOrders=ramp.reduce((a,b)=>a+b,0),rampSales=rampOrders*r,rampOperating=rampOrders*contrib-fixed*3,rampAfterOpening=rampOperating-upfront;document.getElementById("rampModel").innerHTML="<b>前三个月爬坡情景：</b>订单 "+ramp.join("／")+" 单，合计 "+rampOrders+" 单；营收 "+fmt(rampSales)+"；扣三个月固定费后 "+fmt(rampOperating)+"；再扣一次性开办费后 "+fmt(rampAfterOpening)+"。这是手动假设的销量路径，不是流量预测或承诺。"}modelIds.forEach(id=>document.getElementById(id).addEventListener("input",renderModel));ids.forEach(id=>document.getElementById(id).addEventListener("input",renderModel));renderModel();
+</script><script>
+(function(){
+  const cards=[document.querySelector('.grid > .card'),document.querySelector('.model > .card')];
+  const labels=['修改启动成本与备用金','修改售价、单件成本与销量'];
+  cards.forEach((card,index)=>{
+    if(!card)return;
+    card.classList.add('collapsible-card');
+    const heading=card.querySelector('h2');
+    const details=document.createElement('details');
+    details.open=true;
+    const summary=document.createElement('summary');summary.textContent=labels[index];details.appendChild(summary);
+    while(heading.nextSibling)details.appendChild(heading.nextSibling);
+    card.appendChild(details);
+  });
+})();
+</script></body></html>
+
+
+
+
+
